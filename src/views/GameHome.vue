@@ -42,6 +42,14 @@
         </div>
       </el-card>
 
+      <el-card class="game-card" @click="$router.push('/contra')">
+        <img src="../assets/contra-preview.png" class="game-preview" alt="魂斗罗游戏预览">
+        <div class="game-info">
+          <h2>魂斗罗</h2>
+          <p>经典的横版射击游戏，击败敌人，拯救战友！</p>
+        </div>
+      </el-card>
+
       <el-card class="game-card" @click="$router.push('/breakout')">
         <img src="../assets/breakout-preview.png" class="game-preview" alt="打砖块游戏预览">
         <div class="game-info">
