@@ -44,6 +44,11 @@ const routes = [
     path: '/contra',
     name: 'ContraGame',
     component: () => import('../components/ContraGame.vue')
+  },
+  {
+    path: '/airplane',
+    name: 'AirplaneGame',
+    component: () => import('../components/AirplaneGame.vue')
   }
 ]
 
