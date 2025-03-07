@@ -1,10 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
+import AdventureGame from '../components/AdventureGame.vue'
 import SnakeGame from '../components/SnakeGame.vue'
 import Game2048 from '../components/Game2048.vue'
 import BreakoutGame from '../components/BreakoutGame.vue'
+import NumberPuzzleGame from '../components/NumberPuzzleGame.vue'
+import PingPongGame from '../components/PingPongGame.vue'
 
 const routes = [
+  {
+    path: '/kids-exercise',
+    name: 'KidsExercise',
+    component: () => import('../components/KidsExerciseGame.vue')
+  },
   {
     path: '/',
     name: 'GameHome',
@@ -49,6 +57,21 @@ const routes = [
     path: '/airplane',
     name: 'AirplaneGame',
     component: () => import('../components/AirplaneGame.vue')
+  },
+  {
+    path: '/number-puzzle',
+    name: 'NumberPuzzle',
+    component: NumberPuzzleGame
+  },
+  {
+    path: '/ping-pong',
+    name: 'PingPong',
+    component: PingPongGame
+  },
+  {
+    path: '/adventure',
+    name: 'AdventureGame',
+    component: AdventureGame
   }
 ]
 
